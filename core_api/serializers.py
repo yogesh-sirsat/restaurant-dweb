@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from core.models import Profile, Category, Item, Order
+from core.models import Category, Item, Order
 
 
 class CategorySerializer(serializers.ModelSerializer):

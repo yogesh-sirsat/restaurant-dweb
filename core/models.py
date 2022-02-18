@@ -6,26 +6,6 @@ from django.dispatch import receiver
 
 
 
-class Profile(models.Model):
-
-    user = models.OneToOneField(User, on_delete=models.CASCADE)
-    orders = models.ManyToManyField("core.Order", related_name="user")
-
-    @receiver(post_save, sender=User)
-    def create_user_profile(sender, instance, created, **kwargs):
-        if created:
-            Profile.objects.create(user=instance)
-
-    @receiver(post_save, sender=User)
-    def save_user_profile(sender, instance, **kwargs):
-        instance.profile.save()
-
-    def __str__(self):
-        return self.user.username
-
-    def get_absolute_url(self):
-        return reverse("user_detail", kwargs={"pk": self.pk})
-
 class Category(models.Model):
 
     name = models.CharField(max_length=100)
@@ -80,6 +60,7 @@ class Order(models.Model):
         ('completed', 'Completed'),
     )
 
+    user = models.ForeignKey(User, on_delete=models.PROTECT, null=True)
     items = models.ManyToManyField(Item, related_name="order")
     ordered_at = models.DateTimeField(default=timezone.now)
     total_price = models.IntegerField(blank=True, null=True)

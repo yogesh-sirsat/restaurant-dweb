@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from rest_framework import generics
-from core.models import Profile, Category, Item, Order
+from core.models import Category, Item, Order
 from .serializers import OrderSerializer, ItemSerializer, CategorySerializer
 
 class CategoryList(generics.ListCreateAPIView):
