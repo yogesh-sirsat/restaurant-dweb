@@ -47,6 +47,14 @@ class OrderCreate(generics.CreateAPIView):
     serializer_class = CreateOrderSerializer
     permission_classes = (IsAuthenticated,)
 
+    def perform_create(self, serializer):
+        total_price = 0;
+        items = self.request.data.getlist("items")
+        for item in items:
+            total_price += Item.objects.get(id=item).price
+        total_price -= int(self.request.data.get("discounts"))    
+        return serializer.save(total_price=max(0,total_price))
+
 class OrderList(generics.ListAPIView):
     queryset = Order.objects.all()
     serializer_class = OrderSerializer
