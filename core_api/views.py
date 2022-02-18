@@ -5,7 +5,8 @@ from core.models import Category, Item, Order
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from django.http import Http404
-from .serializers import UserSerializer, OrderSerializer, ItemSerializer, CategorySerializer, CreateOrderSerializer
+from .serializers import UserSerializer, OrderSerializer, ItemSerializer, CategorySerializer, CreateOrderSerializer, CreateItemSerializer
+from rest_framework.permissions import IsAuthenticated
 
 class UserList(generics.ListCreateAPIView):
     queryset = User.objects.all()
@@ -44,6 +45,10 @@ class CategoryDetail(generics.RetrieveDestroyAPIView):
 
 class OrderCreate(generics.CreateAPIView):
     serializer_class = CreateOrderSerializer
+    permission_classes = (IsAuthenticated,)
+
+    def perform_create(self, serializer):
+        return serializer.save(user=self.request.user)
 
 class OrderList(generics.ListAPIView):
     queryset = Order.objects.all()
@@ -52,6 +57,10 @@ class OrderList(generics.ListAPIView):
 class OrderDetail(generics.RetrieveAPIView):
     queryset = Order.objects.all()
     serializer_class = OrderSerializer
+
+class ItemCreate(generics.CreateAPIView):
+    serializer_class = CreateItemSerializer
+    permission_classes = (IsAuthenticated,)
 
 class ItemList(generics.ListCreateAPIView):
     queryset = Item.objects.all()

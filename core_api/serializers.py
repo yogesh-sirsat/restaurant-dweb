@@ -19,6 +19,11 @@ class ItemSerializer(serializers.ModelSerializer):
         model = Item
         fields = ('id', 'name', 'image', 'description', 'category', 'price', 'discounts', 'size', 'veg')
 
+class CreateItemSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Item
+        fields = ('id', 'name', 'image', 'description', 'category', 'price', 'discounts', 'size', 'veg')
+
 class OrderSerializer(serializers.ModelSerializer):
     items = ItemSerializer(many=True, read_only=True)
     user = UserSerializer(read_only=True)
