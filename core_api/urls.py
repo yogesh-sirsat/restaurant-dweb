@@ -5,7 +5,7 @@ from django.views.static import serve
 from .views import (
     UserDetail, UserList, CategoryDetail, CategoryList, OrderDetail,
     OrderList, ItemDetail, ItemList, UserCurrentOrder, UserPastOrders,
-    OrderCreate, ItemCreate
+    OrderCreate, ItemCreate, SearchItemList
 )
 urlpatterns = [
     path('user/<int:pk>/', UserDetail.as_view(), name='userdetail'),
@@ -18,6 +18,7 @@ urlpatterns = [
     path('menuitems/<int:pk>/', ItemDetail.as_view(), name='menuitemsdetail'),
     path('menuitems/', ItemList.as_view(), name='menuitemslist'),
     path('menuitems/create', ItemCreate.as_view(), name='menuitemcreate'),
+    re_path(r'^menuitems/query/$', SearchItemList.as_view(), name='menuitemssearch'),
     path('user/<str:username>/current-order', UserCurrentOrder.as_view(), name='usercurrentorder'),
     path('user/<str:username>/orders', UserPastOrders.as_view(), name='userpastorders'),
 

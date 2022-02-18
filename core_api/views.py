@@ -7,6 +7,8 @@ from rest_framework.response import Response
 from django.http import Http404
 from .serializers import UserSerializer, OrderSerializer, ItemSerializer, CategorySerializer, CreateOrderSerializer, CreateItemSerializer
 from rest_framework.permissions import IsAuthenticated
+from rest_framework import filters
+
 
 class UserList(generics.ListCreateAPIView):
     queryset = User.objects.all()
@@ -73,4 +75,10 @@ class ItemList(generics.ListCreateAPIView):
 
 class ItemDetail(generics.RetrieveDestroyAPIView):
     queryset = Item.objects.all()
-    serializer_class = ItemSerializer    
+    serializer_class = ItemSerializer
+
+class SearchItemList(generics.ListAPIView):
+    search_fields = ['name', 'description']
+    filter_backends = (filters.SearchFilter,)
+    queryset = Item.objects.all()
+    serializer_class = ItemSerializer
