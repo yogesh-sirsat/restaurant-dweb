@@ -22,7 +22,7 @@ class ItemSerializer(serializers.ModelSerializer):
 class CreateItemSerializer(serializers.ModelSerializer):
     class Meta:
         model = Item
-        fields = ('id', 'name', 'image', 'description', 'category', 'price', 'size', 'veg')
+        fields = ('name', 'image', 'description', 'category', 'price', 'size', 'veg')
 
 class OrderSerializer(serializers.ModelSerializer):
     items = ItemSerializer(many=True, read_only=True)
@@ -40,4 +40,4 @@ class UserPastOrdersSerializer(serializers.ModelSerializer):
 class CreateOrderSerializer(serializers.ModelSerializer):
     class Meta:
         model = Order
-        fields = ('id', 'user', 'status', 'items', 'total_price', 'discounts', 'ordered_at')
+        fields = ('user', 'status', 'items', 'total_price', 'discounts')

@@ -60,10 +60,12 @@ class OrderCreate(generics.CreateAPIView):
 
     def perform_create(self, serializer):
         total_price = 0;
+        discounts = self.request.data.get("discounts")
         items = self.request.data.getlist("items")
         for item in items:
             total_price += Item.objects.get(id=item).price
-        total_price -= int(self.request.data.get("discounts"))    
+        if(discounts.__len__()!=0):
+            totol_price -= int(discounts)    
         return serializer.save(total_price=max(0,total_price))
 
 class OrderList(generics.ListAPIView):
