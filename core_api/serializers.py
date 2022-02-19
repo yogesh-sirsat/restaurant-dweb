@@ -31,6 +31,12 @@ class OrderSerializer(serializers.ModelSerializer):
         model = Order
         fields = ('id', 'user', 'status', 'items', 'total_price', 'discounts', 'ordered_at')
 
+class UserPastOrdersSerializer(serializers.ModelSerializer):
+    items = ItemSerializer(many=True, read_only=True)
+    class Meta:
+        model = Order
+        fields = ('id', 'status', 'items', 'total_price', 'discounts', 'ordered_at')        
+
 class CreateOrderSerializer(serializers.ModelSerializer):
     class Meta:
         model = Order

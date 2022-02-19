@@ -5,7 +5,10 @@ from core.models import Category, Item, Order
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from django.http import Http404
-from .serializers import UserSerializer, OrderSerializer, ItemSerializer, CategorySerializer, CreateOrderSerializer, CreateItemSerializer
+from .serializers import (
+    UserSerializer, OrderSerializer, ItemSerializer, CategorySerializer, 
+    CreateOrderSerializer, CreateItemSerializer, UserPastOrdersSerializer
+)
 from rest_framework.permissions import IsAuthenticated
 from rest_framework import filters
 
@@ -36,7 +39,7 @@ class UserCurrentOrder(APIView):
             return Response({"current order status": "user don't have any current order"})   
             
 class UserPastOrders(generics.ListAPIView):
-    serializer_class = OrderSerializer
+    serializer_class = UserPastOrdersSerializer
 
     def get_queryset(self):
         username = self.kwargs['username']
