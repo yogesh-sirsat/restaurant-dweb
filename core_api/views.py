@@ -14,11 +14,13 @@ from rest_framework import filters
 
 
 class UserList(generics.ListCreateAPIView):
+    permission_classes = (IsAuthenticated,)
     queryset = User.objects.all()
     serializer_class = UserSerializer
 
 class UserDetail(APIView):
     def get(self, request, **kwargs):
+        permission_classes = (IsAuthenticated,)
         username = self.kwargs['username']
         if(User.objects.filter(username=username).exists()):
             user = User.objects.get(username=username)
@@ -30,6 +32,7 @@ class UserDetail(APIView):
 class UserCurrentOrder(APIView):
 
     def get(self, request, **kwargs):
+        permission_classes = (IsAuthenticated,)
         username = self.kwargs['username']
         last_order = Order.objects.filter(user__username=username).latest('ordered_at')
         if(last_order.status == 'received' or last_order.status == 'cooking'):
@@ -39,6 +42,7 @@ class UserCurrentOrder(APIView):
             return Response({"current order status": "user don't have any current order"})   
             
 class UserPastOrders(generics.ListAPIView):
+    permission_classes = (IsAuthenticated,)
     serializer_class = UserPastOrdersSerializer
 
     def get_queryset(self):
@@ -69,10 +73,12 @@ class OrderCreate(generics.CreateAPIView):
         return serializer.save(total_price=max(0,total_price))
 
 class OrderList(generics.ListAPIView):
+    permission_classes = (IsAuthenticated,)
     queryset = Order.objects.all()
     serializer_class = OrderSerializer
 
 class OrderDetail(generics.RetrieveAPIView):
+    permission_classes = (IsAuthenticated,)
     queryset = Order.objects.all()
     serializer_class = OrderSerializer
 
