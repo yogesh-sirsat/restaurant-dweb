@@ -5,7 +5,10 @@ from core.models import Category, Item, Order
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from django.http import Http404
-from .serializers import UserSerializer, OrderSerializer, ItemSerializer, CategorySerializer, CreateOrderSerializer, CreateItemSerializer
+from .serializers import (
+    UserSerializer, OrderSerializer, ItemSerializer, CategorySerializer, 
+    CreateOrderSerializer, CreateItemSerializer, UserPastOrdersSerializer
+)
 from rest_framework.permissions import IsAuthenticated
 from rest_framework import filters
 
@@ -14,9 +17,15 @@ class UserList(generics.ListCreateAPIView):
     queryset = User.objects.all()
     serializer_class = UserSerializer
 
-class UserDetail(generics.RetrieveAPIView):
-    queryset = User.objects.all()
-    serializer_class = UserSerializer
+class UserDetail(APIView):
+    def get(self, request, **kwargs):
+        username = self.kwargs['username']
+        if(User.objects.filter(username=username).exists()):
+            user = User.objects.get(username=username)
+            serializer = UserSerializer(user)
+            return Response({"user details": serializer.data})
+        else:
+            return Response({"user details": "user does not exists"})
 
 class UserCurrentOrder(APIView):
 
@@ -27,10 +36,10 @@ class UserCurrentOrder(APIView):
             serializer = OrderSerializer(last_order)
             return Response({"current order status": serializer.data})
         else:
-            return Response({"current order status": NULL})   
+            return Response({"current order status": "user don't have any current order"})   
             
 class UserPastOrders(generics.ListAPIView):
-    serializer_class = OrderSerializer
+    serializer_class = UserPastOrdersSerializer
 
     def get_queryset(self):
         username = self.kwargs['username']
@@ -51,10 +60,12 @@ class OrderCreate(generics.CreateAPIView):
 
     def perform_create(self, serializer):
         total_price = 0;
+        discounts = self.request.data.get("discounts")
         items = self.request.data.getlist("items")
         for item in items:
             total_price += Item.objects.get(id=item).price
-        total_price -= int(self.request.data.get("discounts"))    
+        if(discounts.__len__()!=0):
+            totol_price -= int(discounts)    
         return serializer.save(total_price=max(0,total_price))
 
 class OrderList(generics.ListAPIView):
