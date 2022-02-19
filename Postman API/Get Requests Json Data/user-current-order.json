@@ -1,0 +1,38 @@
+{
+  "current order status": {
+    "id": 26,
+    "user": {
+      "id": 1,
+      "username": "yogesh",
+      "first_name": "",
+      "last_name": "",
+      "email": "ys@gmail.com"
+    },
+    "status": "received",
+    "items": [
+      {
+        "id": 2,
+        "name": "Chicken Schezwan",
+        "image": "/media/items/chicken_szechwan.jpeg",
+        "description": "Description of Chicken Schezwan.",
+        "category": [{ "name": "Chinese" }],
+        "price": 300,
+        "size": "medium",
+        "veg": false
+      },
+      {
+        "id": 7,
+        "name": "Thums Up",
+        "image": "/media/items/thumsUp.jpg",
+        "description": "Description of Thums Up",
+        "category": [{ "name": "Cold Drinks" }],
+        "price": 25,
+        "size": "small",
+        "veg": true
+      }
+    ],
+    "total_price": 300,
+    "discounts": 25,
+    "ordered_at": "2022-02-18T19:45:46Z"
+  }
+}
