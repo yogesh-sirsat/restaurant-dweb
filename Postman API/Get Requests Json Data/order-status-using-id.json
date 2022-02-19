@@ -1,0 +1,46 @@
+{
+  "id": 23,
+  "user": {
+    "id": 2,
+    "username": "codesh",
+    "first_name": "",
+    "last_name": "",
+    "email": "codesh@gmail.com"
+  },
+  "status": "cooking",
+  "items": [
+    {
+      "id": 2,
+      "name": "Chicken Schezwan",
+      "image": "http://127.0.0.1:8000/media/items/chicken_szechwan.jpeg",
+      "description": "Description of Chicken Schezwan.",
+      "category": [{ "name": "Chinese" }],
+      "price": 300,
+      "size": "medium",
+      "veg": false
+    },
+    {
+      "id": 5,
+      "name": "Chana Masala",
+      "image": "http://127.0.0.1:8000/media/items/chana_masala.jpeg",
+      "description": "Description of Chana Masala",
+      "category": [{ "name": "Dishes" }],
+      "price": 100,
+      "size": "full",
+      "veg": true
+    },
+    {
+      "id": 7,
+      "name": "Thums Up",
+      "image": "http://127.0.0.1:8000/media/items/thumsUp.jpg",
+      "description": "Description of Thums Up",
+      "category": [{ "name": "Cold Drinks" }],
+      "price": 25,
+      "size": "small",
+      "veg": true
+    }
+  ],
+  "total_price": 425,
+  "discounts": 0,
+  "ordered_at": "2022-02-18T19:43:36Z"
+}

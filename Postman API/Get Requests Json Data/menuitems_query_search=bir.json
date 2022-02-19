@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "name": "Biryani",
+    "image": "http://127.0.0.1:8000/media/items/biryani.jpeg",
+    "description": "Description of Biryani",
+    "category": [{ "name": "Rice" }],
+    "price": 100,
+    "size": "medium",
+    "veg": false
+  }
+]

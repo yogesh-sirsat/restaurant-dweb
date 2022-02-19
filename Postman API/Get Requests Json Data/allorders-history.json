@@ -1,0 +1,932 @@
+[
+  {
+    "id": 1,
+    "user": {
+      "id": 1,
+      "username": "yogesh",
+      "first_name": "",
+      "last_name": "",
+      "email": "ys@gmail.com"
+    },
+    "status": "completed",
+    "items": [
+      {
+        "id": 3,
+        "name": "Gulab Jamun",
+        "image": "http://127.0.0.1:8000/media/items/Gulab_jamun.jpg",
+        "description": "Description of Gulab Jamun",
+        "category": [{ "name": "Dessert" }],
+        "price": 50,
+        "size": "small",
+        "veg": true
+      }
+    ],
+    "total_price": 70,
+    "discounts": 0,
+    "ordered_at": "2022-02-18T08:52:35Z"
+  },
+  {
+    "id": 2,
+    "user": {
+      "id": 1,
+      "username": "yogesh",
+      "first_name": "",
+      "last_name": "",
+      "email": "ys@gmail.com"
+    },
+    "status": "completed",
+    "items": [
+      {
+        "id": 3,
+        "name": "Gulab Jamun",
+        "image": "http://127.0.0.1:8000/media/items/Gulab_jamun.jpg",
+        "description": "Description of Gulab Jamun",
+        "category": [{ "name": "Dessert" }],
+        "price": 50,
+        "size": "small",
+        "veg": true
+      },
+      {
+        "id": 4,
+        "name": "Butter Roti",
+        "image": "http://127.0.0.1:8000/media/items/butter_roti.jpeg",
+        "description": "Description of Butter Roti.",
+        "category": [{ "name": "Roti" }],
+        "price": 20,
+        "size": "medium",
+        "veg": true
+      }
+    ],
+    "total_price": 2,
+    "discounts": 0,
+    "ordered_at": "2022-02-18T09:37:35Z"
+  },
+  {
+    "id": 3,
+    "user": {
+      "id": 2,
+      "username": "codesh",
+      "first_name": "",
+      "last_name": "",
+      "email": "codesh@gmail.com"
+    },
+    "status": "completed",
+    "items": [
+      {
+        "id": 2,
+        "name": "Chicken Schezwan",
+        "image": "http://127.0.0.1:8000/media/items/chicken_szechwan.jpeg",
+        "description": "Description of Chicken Schezwan.",
+        "category": [{ "name": "Chinese" }],
+        "price": 300,
+        "size": "medium",
+        "veg": false
+      },
+      {
+        "id": 3,
+        "name": "Gulab Jamun",
+        "image": "http://127.0.0.1:8000/media/items/Gulab_jamun.jpg",
+        "description": "Description of Gulab Jamun",
+        "category": [{ "name": "Dessert" }],
+        "price": 50,
+        "size": "small",
+        "veg": true
+      },
+      {
+        "id": 5,
+        "name": "Chana Masala",
+        "image": "http://127.0.0.1:8000/media/items/chana_masala.jpeg",
+        "description": "Description of Chana Masala",
+        "category": [{ "name": "Dishes" }],
+        "price": 100,
+        "size": "full",
+        "veg": true
+      }
+    ],
+    "total_price": 23,
+    "discounts": 0,
+    "ordered_at": "2022-02-18T09:49:02Z"
+  },
+  {
+    "id": 4,
+    "user": {
+      "id": 1,
+      "username": "yogesh",
+      "first_name": "",
+      "last_name": "",
+      "email": "ys@gmail.com"
+    },
+    "status": "completed",
+    "items": [
+      {
+        "id": 2,
+        "name": "Chicken Schezwan",
+        "image": "http://127.0.0.1:8000/media/items/chicken_szechwan.jpeg",
+        "description": "Description of Chicken Schezwan.",
+        "category": [{ "name": "Chinese" }],
+        "price": 300,
+        "size": "medium",
+        "veg": false
+      },
+      {
+        "id": 5,
+        "name": "Chana Masala",
+        "image": "http://127.0.0.1:8000/media/items/chana_masala.jpeg",
+        "description": "Description of Chana Masala",
+        "category": [{ "name": "Dishes" }],
+        "price": 100,
+        "size": "full",
+        "veg": true
+      }
+    ],
+    "total_price": 400,
+    "discounts": 0,
+    "ordered_at": "2022-02-18T09:51:22Z"
+  },
+  {
+    "id": 5,
+    "user": {
+      "id": 2,
+      "username": "codesh",
+      "first_name": "",
+      "last_name": "",
+      "email": "codesh@gmail.com"
+    },
+    "status": "completed",
+    "items": [
+      {
+        "id": 3,
+        "name": "Gulab Jamun",
+        "image": "http://127.0.0.1:8000/media/items/Gulab_jamun.jpg",
+        "description": "Description of Gulab Jamun",
+        "category": [{ "name": "Dessert" }],
+        "price": 50,
+        "size": "small",
+        "veg": true
+      },
+      {
+        "id": 4,
+        "name": "Butter Roti",
+        "image": "http://127.0.0.1:8000/media/items/butter_roti.jpeg",
+        "description": "Description of Butter Roti.",
+        "category": [{ "name": "Roti" }],
+        "price": 20,
+        "size": "medium",
+        "veg": true
+      }
+    ],
+    "total_price": 0,
+    "discounts": 0,
+    "ordered_at": "2022-02-18T09:54:41Z"
+  },
+  {
+    "id": 6,
+    "user": {
+      "id": 1,
+      "username": "yogesh",
+      "first_name": "",
+      "last_name": "",
+      "email": "ys@gmail.com"
+    },
+    "status": "completed",
+    "items": [
+      {
+        "id": 4,
+        "name": "Butter Roti",
+        "image": "http://127.0.0.1:8000/media/items/butter_roti.jpeg",
+        "description": "Description of Butter Roti.",
+        "category": [{ "name": "Roti" }],
+        "price": 20,
+        "size": "medium",
+        "veg": true
+      },
+      {
+        "id": 5,
+        "name": "Chana Masala",
+        "image": "http://127.0.0.1:8000/media/items/chana_masala.jpeg",
+        "description": "Description of Chana Masala",
+        "category": [{ "name": "Dishes" }],
+        "price": 100,
+        "size": "full",
+        "veg": true
+      },
+      {
+        "id": 6,
+        "name": "Idli",
+        "image": "http://127.0.0.1:8000/media/items/idli.jpg",
+        "description": "Description of Idli.",
+        "category": [
+          { "name": "Breakfast" },
+          { "name": "Snacks" },
+          { "name": "South Indian" }
+        ],
+        "price": 70,
+        "size": "medium",
+        "veg": true
+      }
+    ],
+    "total_price": 0,
+    "discounts": 0,
+    "ordered_at": "2022-02-18T10:05:05Z"
+  },
+  {
+    "id": 7,
+    "user": {
+      "id": 1,
+      "username": "yogesh",
+      "first_name": "",
+      "last_name": "",
+      "email": "ys@gmail.com"
+    },
+    "status": "completed",
+    "items": [
+      {
+        "id": 1,
+        "name": "Biryani",
+        "image": "http://127.0.0.1:8000/media/items/biryani.jpeg",
+        "description": "Description of Biryani",
+        "category": [{ "name": "Rice" }],
+        "price": 100,
+        "size": "medium",
+        "veg": false
+      }
+    ],
+    "total_price": 0,
+    "discounts": 0,
+    "ordered_at": "2022-02-18T10:05:22Z"
+  },
+  {
+    "id": 8,
+    "user": {
+      "id": 2,
+      "username": "codesh",
+      "first_name": "",
+      "last_name": "",
+      "email": "codesh@gmail.com"
+    },
+    "status": "completed",
+    "items": [
+      {
+        "id": 3,
+        "name": "Gulab Jamun",
+        "image": "http://127.0.0.1:8000/media/items/Gulab_jamun.jpg",
+        "description": "Description of Gulab Jamun",
+        "category": [{ "name": "Dessert" }],
+        "price": 50,
+        "size": "small",
+        "veg": true
+      }
+    ],
+    "total_price": 50,
+    "discounts": 0,
+    "ordered_at": "2022-02-18T10:09:54Z"
+  },
+  {
+    "id": 9,
+    "user": {
+      "id": 1,
+      "username": "yogesh",
+      "first_name": "",
+      "last_name": "",
+      "email": "ys@gmail.com"
+    },
+    "status": "completed",
+    "items": [
+      {
+        "id": 2,
+        "name": "Chicken Schezwan",
+        "image": "http://127.0.0.1:8000/media/items/chicken_szechwan.jpeg",
+        "description": "Description of Chicken Schezwan.",
+        "category": [{ "name": "Chinese" }],
+        "price": 300,
+        "size": "medium",
+        "veg": false
+      }
+    ],
+    "total_price": 350,
+    "discounts": 0,
+    "ordered_at": "2022-02-18T10:12:34Z"
+  },
+  {
+    "id": 10,
+    "user": {
+      "id": 2,
+      "username": "codesh",
+      "first_name": "",
+      "last_name": "",
+      "email": "codesh@gmail.com"
+    },
+    "status": "completed",
+    "items": [
+      {
+        "id": 3,
+        "name": "Gulab Jamun",
+        "image": "http://127.0.0.1:8000/media/items/Gulab_jamun.jpg",
+        "description": "Description of Gulab Jamun",
+        "category": [{ "name": "Dessert" }],
+        "price": 50,
+        "size": "small",
+        "veg": true
+      },
+      {
+        "id": 4,
+        "name": "Butter Roti",
+        "image": "http://127.0.0.1:8000/media/items/butter_roti.jpeg",
+        "description": "Description of Butter Roti.",
+        "category": [{ "name": "Roti" }],
+        "price": 20,
+        "size": "medium",
+        "veg": true
+      }
+    ],
+    "total_price": 0,
+    "discounts": 0,
+    "ordered_at": "2022-02-18T10:29:18Z"
+  },
+  {
+    "id": 11,
+    "user": {
+      "id": 2,
+      "username": "codesh",
+      "first_name": "",
+      "last_name": "",
+      "email": "codesh@gmail.com"
+    },
+    "status": "cancelled",
+    "items": [
+      {
+        "id": 3,
+        "name": "Gulab Jamun",
+        "image": "http://127.0.0.1:8000/media/items/Gulab_jamun.jpg",
+        "description": "Description of Gulab Jamun",
+        "category": [{ "name": "Dessert" }],
+        "price": 50,
+        "size": "small",
+        "veg": true
+      },
+      {
+        "id": 4,
+        "name": "Butter Roti",
+        "image": "http://127.0.0.1:8000/media/items/butter_roti.jpeg",
+        "description": "Description of Butter Roti.",
+        "category": [{ "name": "Roti" }],
+        "price": 20,
+        "size": "medium",
+        "veg": true
+      }
+    ],
+    "total_price": 0,
+    "discounts": 0,
+    "ordered_at": "2022-02-18T10:29:18Z"
+  },
+  {
+    "id": 12,
+    "user": {
+      "id": 1,
+      "username": "yogesh",
+      "first_name": "",
+      "last_name": "",
+      "email": "ys@gmail.com"
+    },
+    "status": "received",
+    "items": [
+      {
+        "id": 3,
+        "name": "Gulab Jamun",
+        "image": "http://127.0.0.1:8000/media/items/Gulab_jamun.jpg",
+        "description": "Description of Gulab Jamun",
+        "category": [{ "name": "Dessert" }],
+        "price": 50,
+        "size": "small",
+        "veg": true
+      },
+      {
+        "id": 4,
+        "name": "Butter Roti",
+        "image": "http://127.0.0.1:8000/media/items/butter_roti.jpeg",
+        "description": "Description of Butter Roti.",
+        "category": [{ "name": "Roti" }],
+        "price": 20,
+        "size": "medium",
+        "veg": true
+      },
+      {
+        "id": 7,
+        "name": "Thums Up",
+        "image": "http://127.0.0.1:8000/media/items/thumsUp.jpg",
+        "description": "Description of Thums Up",
+        "category": [{ "name": "Cold Drinks" }],
+        "price": 25,
+        "size": "small",
+        "veg": true
+      }
+    ],
+    "total_price": 0,
+    "discounts": 0,
+    "ordered_at": "2022-02-18T10:30:58Z"
+  },
+  {
+    "id": 13,
+    "user": {
+      "id": 2,
+      "username": "codesh",
+      "first_name": "",
+      "last_name": "",
+      "email": "codesh@gmail.com"
+    },
+    "status": "received",
+    "items": [
+      {
+        "id": 1,
+        "name": "Biryani",
+        "image": "http://127.0.0.1:8000/media/items/biryani.jpeg",
+        "description": "Description of Biryani",
+        "category": [{ "name": "Rice" }],
+        "price": 100,
+        "size": "medium",
+        "veg": false
+      },
+      {
+        "id": 7,
+        "name": "Thums Up",
+        "image": "http://127.0.0.1:8000/media/items/thumsUp.jpg",
+        "description": "Description of Thums Up",
+        "category": [{ "name": "Cold Drinks" }],
+        "price": 25,
+        "size": "small",
+        "veg": true
+      }
+    ],
+    "total_price": null,
+    "discounts": 0,
+    "ordered_at": "2022-02-18T12:09:10Z"
+  },
+  {
+    "id": 14,
+    "user": {
+      "id": 1,
+      "username": "yogesh",
+      "first_name": "",
+      "last_name": "",
+      "email": "ys@gmail.com"
+    },
+    "status": "completed",
+    "items": [
+      {
+        "id": 3,
+        "name": "Gulab Jamun",
+        "image": "http://127.0.0.1:8000/media/items/Gulab_jamun.jpg",
+        "description": "Description of Gulab Jamun",
+        "category": [{ "name": "Dessert" }],
+        "price": 50,
+        "size": "small",
+        "veg": true
+      }
+    ],
+    "total_price": 50,
+    "discounts": 0,
+    "ordered_at": "2022-02-18T18:58:40Z"
+  },
+  {
+    "id": 15,
+    "user": {
+      "id": 1,
+      "username": "yogesh",
+      "first_name": "",
+      "last_name": "",
+      "email": "ys@gmail.com"
+    },
+    "status": "cancelled",
+    "items": [
+      {
+        "id": 3,
+        "name": "Gulab Jamun",
+        "image": "http://127.0.0.1:8000/media/items/Gulab_jamun.jpg",
+        "description": "Description of Gulab Jamun",
+        "category": [{ "name": "Dessert" }],
+        "price": 50,
+        "size": "small",
+        "veg": true
+      }
+    ],
+    "total_price": null,
+    "discounts": 0,
+    "ordered_at": "2022-02-18T19:06:20Z"
+  },
+  {
+    "id": 16,
+    "user": {
+      "id": 1,
+      "username": "yogesh",
+      "first_name": "",
+      "last_name": "",
+      "email": "ys@gmail.com"
+    },
+    "status": "received",
+    "items": [
+      {
+        "id": 1,
+        "name": "Biryani",
+        "image": "http://127.0.0.1:8000/media/items/biryani.jpeg",
+        "description": "Description of Biryani",
+        "category": [{ "name": "Rice" }],
+        "price": 100,
+        "size": "medium",
+        "veg": false
+      }
+    ],
+    "total_price": null,
+    "discounts": 0,
+    "ordered_at": "2022-02-18T19:16:20.204276Z"
+  },
+  {
+    "id": 17,
+    "user": {
+      "id": 2,
+      "username": "codesh",
+      "first_name": "",
+      "last_name": "",
+      "email": "codesh@gmail.com"
+    },
+    "status": "received",
+    "items": [
+      {
+        "id": 1,
+        "name": "Biryani",
+        "image": "http://127.0.0.1:8000/media/items/biryani.jpeg",
+        "description": "Description of Biryani",
+        "category": [{ "name": "Rice" }],
+        "price": 100,
+        "size": "medium",
+        "veg": false
+      }
+    ],
+    "total_price": null,
+    "discounts": 0,
+    "ordered_at": "2022-02-18T19:22:22.392192Z"
+  },
+  {
+    "id": 18,
+    "user": {
+      "id": 1,
+      "username": "yogesh",
+      "first_name": "",
+      "last_name": "",
+      "email": "ys@gmail.com"
+    },
+    "status": "received",
+    "items": [
+      {
+        "id": 1,
+        "name": "Biryani",
+        "image": "http://127.0.0.1:8000/media/items/biryani.jpeg",
+        "description": "Description of Biryani",
+        "category": [{ "name": "Rice" }],
+        "price": 100,
+        "size": "medium",
+        "veg": false
+      },
+      {
+        "id": 3,
+        "name": "Gulab Jamun",
+        "image": "http://127.0.0.1:8000/media/items/Gulab_jamun.jpg",
+        "description": "Description of Gulab Jamun",
+        "category": [{ "name": "Dessert" }],
+        "price": 50,
+        "size": "small",
+        "veg": true
+      }
+    ],
+    "total_price": null,
+    "discounts": 0,
+    "ordered_at": "2022-02-18T19:29:46.957485Z"
+  },
+  {
+    "id": 19,
+    "user": {
+      "id": 2,
+      "username": "codesh",
+      "first_name": "",
+      "last_name": "",
+      "email": "codesh@gmail.com"
+    },
+    "status": "cancelled",
+    "items": [
+      {
+        "id": 1,
+        "name": "Biryani",
+        "image": "http://127.0.0.1:8000/media/items/biryani.jpeg",
+        "description": "Description of Biryani",
+        "category": [{ "name": "Rice" }],
+        "price": 100,
+        "size": "medium",
+        "veg": false
+      },
+      {
+        "id": 3,
+        "name": "Gulab Jamun",
+        "image": "http://127.0.0.1:8000/media/items/Gulab_jamun.jpg",
+        "description": "Description of Gulab Jamun",
+        "category": [{ "name": "Dessert" }],
+        "price": 50,
+        "size": "small",
+        "veg": true
+      },
+      {
+        "id": 5,
+        "name": "Chana Masala",
+        "image": "http://127.0.0.1:8000/media/items/chana_masala.jpeg",
+        "description": "Description of Chana Masala",
+        "category": [{ "name": "Dishes" }],
+        "price": 100,
+        "size": "full",
+        "veg": true
+      }
+    ],
+    "total_price": null,
+    "discounts": 0,
+    "ordered_at": "2022-02-18T19:30:27Z"
+  },
+  {
+    "id": 20,
+    "user": {
+      "id": 1,
+      "username": "yogesh",
+      "first_name": "",
+      "last_name": "",
+      "email": "ys@gmail.com"
+    },
+    "status": "received",
+    "items": [
+      {
+        "id": 1,
+        "name": "Biryani",
+        "image": "http://127.0.0.1:8000/media/items/biryani.jpeg",
+        "description": "Description of Biryani",
+        "category": [{ "name": "Rice" }],
+        "price": 100,
+        "size": "medium",
+        "veg": false
+      },
+      {
+        "id": 5,
+        "name": "Chana Masala",
+        "image": "http://127.0.0.1:8000/media/items/chana_masala.jpeg",
+        "description": "Description of Chana Masala",
+        "category": [{ "name": "Dishes" }],
+        "price": 100,
+        "size": "full",
+        "veg": true
+      },
+      {
+        "id": 7,
+        "name": "Thums Up",
+        "image": "http://127.0.0.1:8000/media/items/thumsUp.jpg",
+        "description": "Description of Thums Up",
+        "category": [{ "name": "Cold Drinks" }],
+        "price": 25,
+        "size": "small",
+        "veg": true
+      }
+    ],
+    "total_price": null,
+    "discounts": 0,
+    "ordered_at": "2022-02-18T19:32:25.707597Z"
+  },
+  {
+    "id": 21,
+    "user": {
+      "id": 1,
+      "username": "yogesh",
+      "first_name": "",
+      "last_name": "",
+      "email": "ys@gmail.com"
+    },
+    "status": "received",
+    "items": [
+      {
+        "id": 1,
+        "name": "Biryani",
+        "image": "http://127.0.0.1:8000/media/items/biryani.jpeg",
+        "description": "Description of Biryani",
+        "category": [{ "name": "Rice" }],
+        "price": 100,
+        "size": "medium",
+        "veg": false
+      },
+      {
+        "id": 2,
+        "name": "Chicken Schezwan",
+        "image": "http://127.0.0.1:8000/media/items/chicken_szechwan.jpeg",
+        "description": "Description of Chicken Schezwan.",
+        "category": [{ "name": "Chinese" }],
+        "price": 300,
+        "size": "medium",
+        "veg": false
+      },
+      {
+        "id": 7,
+        "name": "Thums Up",
+        "image": "http://127.0.0.1:8000/media/items/thumsUp.jpg",
+        "description": "Description of Thums Up",
+        "category": [{ "name": "Cold Drinks" }],
+        "price": 25,
+        "size": "small",
+        "veg": true
+      }
+    ],
+    "total_price": null,
+    "discounts": 0,
+    "ordered_at": "2022-02-18T19:33:27.963991Z"
+  },
+  {
+    "id": 22,
+    "user": {
+      "id": 2,
+      "username": "codesh",
+      "first_name": "",
+      "last_name": "",
+      "email": "codesh@gmail.com"
+    },
+    "status": "received",
+    "items": [
+      {
+        "id": 2,
+        "name": "Chicken Schezwan",
+        "image": "http://127.0.0.1:8000/media/items/chicken_szechwan.jpeg",
+        "description": "Description of Chicken Schezwan.",
+        "category": [{ "name": "Chinese" }],
+        "price": 300,
+        "size": "medium",
+        "veg": false
+      },
+      {
+        "id": 5,
+        "name": "Chana Masala",
+        "image": "http://127.0.0.1:8000/media/items/chana_masala.jpeg",
+        "description": "Description of Chana Masala",
+        "category": [{ "name": "Dishes" }],
+        "price": 100,
+        "size": "full",
+        "veg": true
+      },
+      {
+        "id": 7,
+        "name": "Thums Up",
+        "image": "http://127.0.0.1:8000/media/items/thumsUp.jpg",
+        "description": "Description of Thums Up",
+        "category": [{ "name": "Cold Drinks" }],
+        "price": 25,
+        "size": "small",
+        "veg": true
+      }
+    ],
+    "total_price": 425,
+    "discounts": 0,
+    "ordered_at": "2022-02-18T19:40:19.596424Z"
+  },
+  {
+    "id": 23,
+    "user": {
+      "id": 2,
+      "username": "codesh",
+      "first_name": "",
+      "last_name": "",
+      "email": "codesh@gmail.com"
+    },
+    "status": "cooking",
+    "items": [
+      {
+        "id": 2,
+        "name": "Chicken Schezwan",
+        "image": "http://127.0.0.1:8000/media/items/chicken_szechwan.jpeg",
+        "description": "Description of Chicken Schezwan.",
+        "category": [{ "name": "Chinese" }],
+        "price": 300,
+        "size": "medium",
+        "veg": false
+      },
+      {
+        "id": 5,
+        "name": "Chana Masala",
+        "image": "http://127.0.0.1:8000/media/items/chana_masala.jpeg",
+        "description": "Description of Chana Masala",
+        "category": [{ "name": "Dishes" }],
+        "price": 100,
+        "size": "full",
+        "veg": true
+      },
+      {
+        "id": 7,
+        "name": "Thums Up",
+        "image": "http://127.0.0.1:8000/media/items/thumsUp.jpg",
+        "description": "Description of Thums Up",
+        "category": [{ "name": "Cold Drinks" }],
+        "price": 25,
+        "size": "small",
+        "veg": true
+      }
+    ],
+    "total_price": 425,
+    "discounts": 0,
+    "ordered_at": "2022-02-18T19:43:36Z"
+  },
+  {
+    "id": 24,
+    "user": {
+      "id": 1,
+      "username": "yogesh",
+      "first_name": "",
+      "last_name": "",
+      "email": "ys@gmail.com"
+    },
+    "status": "cooking",
+    "items": [
+      {
+        "id": 2,
+        "name": "Chicken Schezwan",
+        "image": "http://127.0.0.1:8000/media/items/chicken_szechwan.jpeg",
+        "description": "Description of Chicken Schezwan.",
+        "category": [{ "name": "Chinese" }],
+        "price": 300,
+        "size": "medium",
+        "veg": false
+      },
+      {
+        "id": 5,
+        "name": "Chana Masala",
+        "image": "http://127.0.0.1:8000/media/items/chana_masala.jpeg",
+        "description": "Description of Chana Masala",
+        "category": [{ "name": "Dishes" }],
+        "price": 100,
+        "size": "full",
+        "veg": true
+      },
+      {
+        "id": 7,
+        "name": "Thums Up",
+        "image": "http://127.0.0.1:8000/media/items/thumsUp.jpg",
+        "description": "Description of Thums Up",
+        "category": [{ "name": "Cold Drinks" }],
+        "price": 25,
+        "size": "small",
+        "veg": true
+      }
+    ],
+    "total_price": 425,
+    "discounts": 0,
+    "ordered_at": "2022-02-18T19:44:50Z"
+  },
+  {
+    "id": 25,
+    "user": {
+      "id": 1,
+      "username": "yogesh",
+      "first_name": "",
+      "last_name": "",
+      "email": "ys@gmail.com"
+    },
+    "status": "received",
+    "items": [
+      {
+        "id": 2,
+        "name": "Chicken Schezwan",
+        "image": "http://127.0.0.1:8000/media/items/chicken_szechwan.jpeg",
+        "description": "Description of Chicken Schezwan.",
+        "category": [{ "name": "Chinese" }],
+        "price": 300,
+        "size": "medium",
+        "veg": false
+      }
+    ],
+    "total_price": 250,
+    "discounts": 50,
+    "ordered_at": "2022-02-18T19:45:18.359810Z"
+  },
+  {
+    "id": 26,
+    "user": {
+      "id": 1,
+      "username": "yogesh",
+      "first_name": "",
+      "last_name": "",
+      "email": "ys@gmail.com"
+    },
+    "status": "received",
+    "items": [
+      {
+        "id": 2,
+        "name": "Chicken Schezwan",
+        "image": "http://127.0.0.1:8000/media/items/chicken_szechwan.jpeg",
+        "description": "Description of Chicken Schezwan.",
+        "category": [{ "name": "Chinese" }],
+        "price": 300,
+        "size": "medium",
+        "veg": false
+      }
+    ],
+    "total_price": 0,
+    "discounts": 350,
+    "ordered_at": "2022-02-18T19:45:46.012472Z"
+  }
+]
