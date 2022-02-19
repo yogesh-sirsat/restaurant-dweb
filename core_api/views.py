@@ -14,9 +14,15 @@ class UserList(generics.ListCreateAPIView):
     queryset = User.objects.all()
     serializer_class = UserSerializer
 
-class UserDetail(generics.RetrieveAPIView):
-    queryset = User.objects.all()
-    serializer_class = UserSerializer
+class UserDetail(APIView):
+    def get(self, request, **kwargs):
+        username = self.kwargs['username']
+        if(User.objects.filter(username=username).exists()):
+            user = User.objects.get(username=username)
+            serializer = UserSerializer(user)
+            return Response({"user details": serializer.data})
+        else:
+            return Response({"user details": "user does not exists"})
 
 class UserCurrentOrder(APIView):
 
@@ -27,7 +33,7 @@ class UserCurrentOrder(APIView):
             serializer = OrderSerializer(last_order)
             return Response({"current order status": serializer.data})
         else:
-            return Response({"current order status": NULL})   
+            return Response({"current order status": "user don't have any current order"})   
             
 class UserPastOrders(generics.ListAPIView):
     serializer_class = OrderSerializer
