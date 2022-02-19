@@ -35,7 +35,6 @@ class Item(models.Model):
     description = models.TextField()
     category = models.ManyToManyField(Category, related_name="items")
     price = models.IntegerField()
-    discounts = models.IntegerField(default=0)
     size = models.CharField(choices=plate_size_options, max_length=50, blank=True, null=True)
     veg = models.BooleanField()
     objects = models.Manager()  # default manager
